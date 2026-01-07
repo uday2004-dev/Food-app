@@ -24,7 +24,7 @@ async function createFood(req,res) {
         message:"food created successfully",
         food:foodItem,
     })
- }
+ }     
 module.exports={
     createFood,    
 
