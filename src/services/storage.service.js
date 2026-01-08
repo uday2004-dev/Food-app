@@ -7,11 +7,11 @@ const imagekit = new ImageKit({
 })
 
 async function uploadFile(file, fileName) {
-    return await imagekit.upload({
-        file,
-        fileName,
-        folder: "/food_images"
-    })
+  const result=await imagekit.upload({
+    file:file,
+    fileName:fileName,
+  })
+  return result
 }
 
 module.exports = {

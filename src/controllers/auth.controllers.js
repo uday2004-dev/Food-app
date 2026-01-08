@@ -276,6 +276,11 @@ async function registerFoodPartner(req, res) {
 
   res.status(201).json({
     message: "Food partner registered successfully",
+     foodPartner: {
+            _id: foodPartner._id,
+            name: foodPartner.name,
+            email: foodPartner.email
+        }
   });
 }
 
@@ -316,3 +321,4 @@ module.exports = {
   loginFoodPartner,
   logoutFoodPartner,
 };
+
